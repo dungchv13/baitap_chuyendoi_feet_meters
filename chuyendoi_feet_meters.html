@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button style="border: 3px solid black;width: 400px;height: 400px;font-size: 50px" onclick="chance(1)">feet --> meters</button>
+<button style="border: 3px solid black;width: 400px;height: 400px;font-size: 50px" onclick="chance(2)">meters --> feet</button>
+<h1 id="show"></h1>
+<script>
+    function chance(type){
+        let a = prompt("nhap gia tri ban muon quy doi");
+        let b;
+        if(type == 1){
+            b = 0.305 * a;
+        }else{
+            b = 3.279 * a;
+        }
+        document.getElementById("show").innerHTML="gia tri sau khi quy doi la: "+b;
+    }
+
+</script>
+</body>
+</html>
